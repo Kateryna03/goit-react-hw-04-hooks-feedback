@@ -5,10 +5,10 @@ const Buttons = ({ state, handleIncrement }) => {
   // console.log(name);
   return (
     <ul className={styles.buttonList}>
-      {Object.keys(state).map(item => (
+      {state.map(item => (
         <li className={styles.item} key={item}>
-          <button type="button" onClick={handleIncrement}>
-            {item}
+          <button type="button" onClick={handleIncrement} name={item}>
+            {[item]}
           </button>
         </li>
       ))}
@@ -17,7 +17,7 @@ const Buttons = ({ state, handleIncrement }) => {
 };
 
 Buttons.propTypes = {
-  state: PropTypes.object.isRequired,
+  state: PropTypes.array.isRequired,
   handleIncrement: PropTypes.func.isRequired,
 };
 

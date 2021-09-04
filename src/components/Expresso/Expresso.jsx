@@ -17,12 +17,12 @@ const Expresso = ({ good, neutral, bad, total, positiveFeedback }) => {
           <p>Bad:{bad}</p>
         </li>
         <li className={styles.item}>
-          <p>Total:{total()}</p>
+          <p>Total:{total}</p>
         </li>
         <li className={styles.item}>
           <p>
             Positive feedback:
-            {positiveFeedback()}%
+            {positiveFeedback}%
           </p>
         </li>
         {/* <Notification message={'No feedback given'}></Notification> */}
@@ -39,8 +39,8 @@ Expresso.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
-  total: PropTypes.func.isRequired,
-  positiveFeedback: PropTypes.func.isRequired,
+  //total: PropTypes.func.isRequired,
+  //positiveFeedback: PropTypes.func.isRequired,
 };
 
 export default Expresso;
