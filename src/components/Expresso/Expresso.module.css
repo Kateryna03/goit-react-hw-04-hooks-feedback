@@ -1,0 +1,15 @@
+ul {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  background-color: bisque;
+  border: 3px solid aquamarine;
+  list-style: none;
+  display: flex;
+  margin-bottom: 2px;
+}
+p {
+  display: flex;
+}
